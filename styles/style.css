@@ -1,0 +1,46 @@
+.card-form {
+    margin: 0 auto;
+    padding: 2em;
+    width: 750px;
+    height: 300px;
+    background: #01023d;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+@property --angle{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card-form::after, .card-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: conic-gradient(from var(--angle),transparent 70%,rgb(118, 136, 238),red);
+    z-index: -1; /* Asegúrate de que el ::after esté detrás de .card-form */
+    border-radius: 10px;
+    padding: 3px;
+    margin: -3px; /* Ajusta el margen negativo para que el borde se vea a través del padding */
+    animation: 3s spin linear infinite;
+}
+
+.card-form::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
