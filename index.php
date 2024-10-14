@@ -15,13 +15,13 @@
         <form class="card-form" method="POST">
             <div class="row mt-4">
                 <div class="col-sm-4">
-                    <label class="text-light" for="valor">VALOR: </label>
+                    <label class="" for="valor">VALOR: </label>
                     <input type="number" name="valor" class="form-control" value="">
  
                 </div>
  
                 <div class="col-sm-4">
-                    <label for="desde" class="fomr-label text-light">Desde: </label>
+                    <label for="desde" class="fomr-label ">Desde: </label>
                     <select class="form-select" name="desde">
                         <option selected>--Seleccione un valor--</option>
                         <option value="Milimetro">Milímetro</option>
@@ -36,7 +36,7 @@
                 </div>
  
                 <div class="col-sm-4">
-                    <label for="hasta" class="fomr-label text-light">Hasta: </label>
+                    <label for="hasta" class="fomr-label ">Hasta: </label>
                     <select class="form-select" name="hasta">
                         <option selected>--Seleccione un valor--</option>
                         <option value="Milimetro">Milímetro</option>
@@ -59,7 +59,7 @@
  
                 <div class="col-sm-6">
                     <div class="mb-3">
-                        <label for="valor" class="text-light">RESULTADO: </label>
+                        <label for="valor" class="">RESULTADO: </label>
                         <input type="text" name="resultado" class="form-control">
                     </div>
                 </div>

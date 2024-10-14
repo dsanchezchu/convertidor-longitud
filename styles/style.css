@@ -3,7 +3,7 @@
     padding: 2em;
     width: 750px;
     height: 300px;
-    background: #01023d;
+    background: #cccbcb;
     text-align: center;
     border-radius: 10px;
     position: relative;
@@ -22,12 +22,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: conic-gradient(from var(--angle),transparent 70%,rgb(118, 136, 238),red);
+    background-image: conic-gradient(from var(--angle),transparent 70%,#d61515,#e60707);
     z-index: -1; /* Asegúrate de que el ::after esté detrás de .card-form */
     border-radius: 10px;
     padding: 3px;
     margin: -3px; /* Ajusta el margen negativo para que el borde se vea a través del padding */
-    animation: 3s spin linear infinite;
+    animation: 5s spin linear infinite;
 }
 
 .card-form::before{
