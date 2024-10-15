@@ -22,7 +22,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: conic-gradient(from var(--angle),transparent 70%,#d61515,#e60707,rgb(87, 51, 248),rgb(2, 2, 249)); 
+    background-image: conic-gradient(from var(--angle),transparent 70%,#a0e707); 
     z-index: -1; /* Asegúrate de que el ::after esté detrás de .card-form */
     border-radius: 10px;
     padding: 3px;
@@ -42,5 +42,78 @@
     }
     to {
         --angle: 360deg;
+    }
+}
+
+/* Fondo animado */
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, #820101 35%, #a44b03 100%);
+    z-index: 0; /* El fondo está en la capa más baja */
+}
+
+.animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Fondo animado por debajo del borde */
+    overflow: hidden;
+    pointer-events: none; 
+}
+
+.animated-bg div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: move 20s infinite ease-in-out;
+}
+
+.animated-bg div:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-duration: 18s;
+    animation-delay: -5s;
+}
+
+.animated-bg div:nth-child(2) {
+    top: 80%;
+    left: 20%;
+    animation-duration: 25s;
+    animation-delay: -3s;
+}
+
+.animated-bg div:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    animation-duration: 22s;
+    animation-delay: 0s;
+}
+
+.animated-bg div:nth-child(4) {
+    top: 70%;
+    left: 80%;
+    animation-duration: 20s;
+    animation-delay: -2s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px) translateX(0px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-200px) translateX(200px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0px) translateX(0px);
+        opacity: 1;
     }
 }
