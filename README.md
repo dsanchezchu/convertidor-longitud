@@ -29,3 +29,10 @@ El proyecto tiene la siguiente estructura de archivos:
 1. Abre la aplicación en tu navegador web.
 2. Ingresa el valor y selecciona las unidades de longitud que deseas convertir.
 3. Haz clic en el botón de conversión para obtener el resultado.
+
+<div style="text-align: center;">
+  <video width="1200" height="320" autoplay loop muted>
+    <source src="https://github.com/user-attachments/assets/5674e598-c751-4a23-9022-e892caa68954" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+  </video>
+</div>
