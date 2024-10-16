@@ -25,10 +25,11 @@ El proyecto tiene la siguiente estructura de archivos:
 4. Accede a `index.php` a través de tu navegador web.
 
 ## Uso
-
 1. Abre la aplicación en tu navegador web.
 2. Ingresa el valor y selecciona las unidades de longitud que deseas convertir.
 3. Haz clic en el botón de conversión para obtener el resultado.
+
+https://github.com/user-attachments/assets/3915b4a0-befb-43e4-94ed-ce1021254ec0
 
 <div style="text-align: center;">
   <video width="1200" height="320" autoplay loop muted>
